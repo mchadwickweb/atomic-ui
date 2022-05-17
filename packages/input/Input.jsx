@@ -4,13 +4,13 @@ export const Label = ({ name, children }) => (
 
 export const Hint = (name, children) => <p id={`${name}-hint`}>{children}</p>;
 
-export const Error = ({ name, children }) => (
+export const ErrorMessage = ({ name, children }) => (
   <p id={`${name}-error`} hidden>
     {children}
   </p>
 );
 
-export default Input = ({
+export const Input = ({
   name,
   type,
   autoComplete,
@@ -23,14 +23,8 @@ export default Input = ({
     <>
       {labelText ? <Label name={name}>{labelText}</Label> : null}
       {hint ? <Hint name={name}>{hint}</Hint> : null}
-      {error ? <Error></Error> : null}
+      <ErrorMessage>{error}</ErrorMessage>
       <input name={name} id={name} type={type} {...props} />
     </>
   );
 };
-{
-  /*
-<label for="full-name-1" class="coop-form__label">Full name</label>
-<p id="full-name-1-error" class="coop-form__error" hidden></p>
-<input id="full-name-1" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="full-name-1"> */
-}
