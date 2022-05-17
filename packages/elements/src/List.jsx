@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export const ListItem = ({children}) => <li>{children}</li>
+export const ListItem = ({ children }) => <li>{children}</li>;
 
 export const List = ({ as, children }) => {
   switch (as) {
-    case 'ul':
+    case "ul":
       return <ul>{children}</ul>;
-    case 'ol':
+    case "ol":
       return <ol>{children}</ol>;
     default:
       break;

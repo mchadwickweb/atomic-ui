@@ -1,3 +1,3 @@
-import React from 'react';
+import React from "react";
 
-export const Divider = ({ children }) => <hr/>;
+export const Divider = ({ children }) => <hr />;
