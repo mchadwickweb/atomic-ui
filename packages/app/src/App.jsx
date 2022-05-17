@@ -1,5 +1,3 @@
-// import { Heading } from '@atomic-ui/elements';
-import {Input} from '@atomic-ui/input';
 import { Heading, Divider, List, ListItem, Text, Blockquote, Link } from '@atomic-ui/elements';
 
 function App() {
