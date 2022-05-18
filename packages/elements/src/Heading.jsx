@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const Heading = ({ as, children }) => {
+export function Heading({ as, children }) {
   switch (as) {
     case "h1":
       return <h1>{children}</h1>;
@@ -17,4 +18,9 @@ export const Heading = ({ as, children }) => {
     default:
       break;
   }
+}
+
+Heading.propTypes = {
+  children: PropTypes.element.isRequired,
+  as: PropTypes.string.isRequired,
 };

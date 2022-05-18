@@ -1,5 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const Blockquote = ({ children, cite }) => (
-  <blockquote cite={cite}>{children}</blockquote>
-);
+export function Blockquote({ children, cite }) {
+  return <blockquote cite={cite}>{children}</blockquote>;
+}
+
+Blockquote.propTypes = {
+  children: PropTypes.element.isRequired,
+  cite: PropTypes.string,
+};
+
+Blockquote.defaultProps = {
+  cite: null,
+};

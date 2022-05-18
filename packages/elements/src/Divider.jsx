@@ -1,3 +1,5 @@
 import React from "react";
 
-export const Divider = ({ children }) => <hr />;
+export function Divider() {
+  return <hr />;
+}

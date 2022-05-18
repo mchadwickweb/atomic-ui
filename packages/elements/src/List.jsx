@@ -1,8 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const ListItem = ({ children }) => <li>{children}</li>;
+export function ListItem({ children }) {
+  return <li>{children}</li>;
+}
 
-export const List = ({ as, children }) => {
+ListItem.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+export function List({ as, children }) {
   switch (as) {
     case "ul":
       return <ul>{children}</ul>;
@@ -11,4 +18,9 @@ export const List = ({ as, children }) => {
     default:
       break;
   }
+}
+
+List.propTypes = {
+  children: PropTypes.element.isRequired,
+  as: PropTypes.string.isRequired,
 };

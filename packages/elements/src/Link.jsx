@@ -1,5 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const Link = ({ children, href }) => {
+export function Link({ children, href }) {
   return <a href={href}>{children}</a>;
+}
+
+Link.propTypes = {
+  children: PropTypes.element.isRequired,
+  href: PropTypes.string.isRequired,
 };
