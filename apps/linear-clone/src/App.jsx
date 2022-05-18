@@ -1,45 +1,42 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from "react";
+import { Heading, Link, Text } from "@atomic-ui/elements";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+    <main>
+      <header>
+        <nav>
+          <Link href="/">Logo</Link>
+          <Link href="/">Features</Link>
+          <Link href="/">Method</Link>
+          <Link href="/">Changelog</Link>
+          <Link href="/">About</Link>
+          <Link href="/">Pricing</Link>
+          <Link href="/">Blog</Link>
+          <Link href="/">Log in</Link>
+          <Link href="/">Sign up</Link>
+        </nav>
       </header>
-    </div>
-  )
+      <section data-section="hero">
+        <Heading as="h1">
+          The new standard for modern software development
+        </Heading>
+        <Text>
+          With its meticulous design, breathtaking speed and opinionated yet
+          flexible workflows, Linear unlocks your teams full potential. It is
+          the tool of choice for high-performance teams to build products
+          better.
+        </Text>
+        <Link href="/" as="button">
+          Sign up for free
+        </Link>
+      </section>
+      <section data-section="customers"></section>
+      <section data-section="features"></section>
+    </main>
+  );
 }
 
-export default App
+export default App;
