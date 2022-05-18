@@ -6,6 +6,6 @@ export function Link({ children, href }) {
 }
 
 Link.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
 };

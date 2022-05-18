@@ -6,5 +6,5 @@ export function Text({ children }) {
 }
 
 Text.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };

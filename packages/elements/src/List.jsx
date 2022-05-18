@@ -6,7 +6,7 @@ export function ListItem({ children }) {
 }
 
 ListItem.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export function List({ as, children }) {
@@ -21,6 +21,6 @@ export function List({ as, children }) {
 }
 
 List.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   as: PropTypes.string.isRequired,
 };

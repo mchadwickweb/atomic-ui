@@ -21,6 +21,6 @@ export function Heading({ as, children }) {
 }
 
 Heading.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   as: PropTypes.string.isRequired,
 };

@@ -6,7 +6,7 @@ export function Blockquote({ children, cite }) {
 }
 
 Blockquote.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
   cite: PropTypes.string,
 };
 
