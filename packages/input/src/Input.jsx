@@ -1,30 +1,32 @@
-export const Label = ({ name, children }) => (
-  <label htmlFor={name}>{children}</label>
-);
+import React from "react";
+import PropTypes from "prop-types";
 
-export const Hint = (name, children) => <p id={`${name}-hint`}>{children}</p>;
-
-export const ErrorMessage = ({ name, children }) => (
-  <p id={`${name}-error`} hidden>
-    {children}
-  </p>
-);
-
-export const Input = ({
+export function Input({
   name,
   type,
   autoComplete,
   hint,
   labelText,
-  error,
+  errorMessage,
   ...props
-}) => {
+}) {
   return (
     <>
-      {labelText ? <Label name={name}>{labelText}</Label> : null}
-      {hint ? <Hint name={name}>{hint}</Hint> : null}
-      <ErrorMessage>{error}</ErrorMessage>
+      {labelText ? <label htmlFor={name}>{labelText}</label> : null}
+      {hint ? <p id={`${name}-hint`}>{hint}</p> : null}
+      <p id={`${name}-error`} hidden>
+        {errorMessage}
+      </p>
       <input name={name} id={name} type={type} {...props} />
     </>
   );
+}
+
+Input.propTypes = {
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  hint: PropTypes.string.isRequired,
+  errorMessage: PropTypes.string.isRequired, // may need to be array of strings
+  labelText: PropTypes.string.isRequired,
+  autoComplete: PropTypes.bool.isRequired,
 };
