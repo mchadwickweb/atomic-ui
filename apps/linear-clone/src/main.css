@@ -7,6 +7,9 @@
 
   --colour-text: #8a8f98;
   --colour-heading: #f7f8f8;
+
+  --container-width: 1200px;
+  --container-padding: var(--spacing-32);
 }
 
 /* Box sizing rules */

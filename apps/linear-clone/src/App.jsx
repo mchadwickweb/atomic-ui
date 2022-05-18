@@ -42,19 +42,19 @@ function App() {
           </div>
         </nav>
       </header>
-      <Section>
+      <Section name="hero" contain>
         <Heading as="h1" align="center">
           The issue tracking tool you&apos;ll enjoy using
         </Heading>
         <Text align="center">
           Linear helps streamline software projects, sprints, tasks, and bug
           tracking. It&apos;s built for high-performance teams.
+          <Link href="/" as="button">
+            Sign up for free
+          </Link>
         </Text>
-        <Link href="/" as="button">
-          Sign up for free
-        </Link>
       </Section>
-      <Section>
+      <Section name="screenshot" contain>
         <img src={linearScreenshot} alt="Screen shot of linear app" />
       </Section>
     </main>

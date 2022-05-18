@@ -1,0 +1,6 @@
+[data-contain="true"] {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
