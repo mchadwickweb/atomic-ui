@@ -1,3 +1,14 @@
+:root {
+  --base-font-size: 16px;
+  --spacing-8: 0.5rem;
+  --spacing-16: 1rem;
+  --spacing-32: 2rem;
+  --spacing-64: 3rem;
+
+  --colour-text: #8a8f98;
+  --colour-heading: #f7f8f8;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -35,6 +46,12 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: var(--base-font-size);
+  color: var(--colour-text);
+  background-color: #060606;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,4 +88,31 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--colour-heading);
+}
+
+h1 {
+  font-size: 66px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 22px;
+}
+
+a {
+  color: var(--colour-text);
+  text-decoration: none;
 }

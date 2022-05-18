@@ -1,4 +1,4 @@
-import { Heading, Link, Text } from "@atomic-ui/elements";
+import { Heading, Link, Text, List, ListItem } from "@atomic-ui/elements";
 import { Section } from "@atomic-ui/structure";
 import React from "react";
 import "./App.css";
@@ -8,16 +8,38 @@ function App() {
   return (
     <main>
       <header className="page-header">
-        <nav>
-          <Link href="/">Logo</Link>
-          <Link href="/">Features</Link>
-          <Link href="/">Method</Link>
-          <Link href="/">Changelog</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Pricing</Link>
-          <Link href="/">Blog</Link>
-          <Link href="/">Log in</Link>
-          <Link href="/">Sign up</Link>
+        <nav className="navigation">
+          <div className="container">
+            <List as="ul">
+              <ListItem>
+                <Link href="/">Logo</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Features</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Method</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Changelog</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">About</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Pricing</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Blog</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Log in</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="/">Sign up</Link>
+              </ListItem>
+            </List>
+          </div>
         </nav>
       </header>
       <Section data-section="hero">
