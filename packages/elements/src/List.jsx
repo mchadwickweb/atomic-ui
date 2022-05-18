@@ -12,9 +12,9 @@ ListItem.propTypes = {
 export function List({ as, children }) {
   switch (as) {
     case "ul":
-      return <ul>{children}</ul>;
+      return <ul role="list">{children}</ul>;
     case "ol":
-      return <ol>{children}</ol>;
+      return <ol role="list">{children}</ol>;
     default:
       break;
   }
