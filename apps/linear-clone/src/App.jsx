@@ -46,7 +46,7 @@ function App() {
         <Heading as="h1">
           The issue tracking tool you&apos;ll enjoy using
         </Heading>
-        <Text>
+        <Text align="right">
           Linear helps streamline software projects, sprints, tasks, and bug
           tracking. It&apos;s built for high-performance teams.
         </Text>
