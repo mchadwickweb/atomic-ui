@@ -17,5 +17,9 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "prettier"],
-  rules: {},
+  rules: {
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-props-no-spreading": "off",
+  },
 };
