@@ -9,9 +9,9 @@ import {
   Link,
 } from "@atomic-ui/elements";
 
-function App() {
+function Elements() {
   return (
-    <div className="App">
+    <>
       <Heading as="h1">Heading level 1</Heading>
       <Heading as="h2">Heading level 2</Heading>
       <Heading as="h3">Heading level 3</Heading>
@@ -48,8 +48,8 @@ function App() {
       <Link href="https://www.interactstudio.co.uk">
         Interact Studio website
       </Link>
-    </div>
+    </>
   );
 }
 
-export default App;
+export default Elements;
