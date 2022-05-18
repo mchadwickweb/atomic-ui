@@ -1,0 +1,11 @@
+[data-heading-align="left"] {
+  text-align: left;
+}
+
+[data-heading-align="center"] {
+  text-align: center;
+}
+
+[data-heading-align="right"] {
+  text-align: right;
+}

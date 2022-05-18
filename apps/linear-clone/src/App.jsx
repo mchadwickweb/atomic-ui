@@ -43,10 +43,10 @@ function App() {
         </nav>
       </header>
       <Section data-section="hero">
-        <Heading as="h1">
+        <Heading as="h1" align="center">
           The issue tracking tool you&apos;ll enjoy using
         </Heading>
-        <Text align="right">
+        <Text align="center">
           Linear helps streamline software projects, sprints, tasks, and bug
           tracking. It&apos;s built for high-performance teams.
         </Text>
