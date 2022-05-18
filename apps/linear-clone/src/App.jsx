@@ -42,7 +42,7 @@ function App() {
           </div>
         </nav>
       </header>
-      <Section data-section="hero">
+      <Section>
         <Heading as="h1" align="center">
           The issue tracking tool you&apos;ll enjoy using
         </Heading>
@@ -54,11 +54,9 @@ function App() {
           Sign up for free
         </Link>
       </Section>
-      <Section data-section="demo">
+      <Section>
         <img src={linearScreenshot} alt="Screen shot of linear app" />
       </Section>
-      <Section data-section="customers"></Section>
-      <Section data-section="features"></Section>
     </main>
   );
 }
