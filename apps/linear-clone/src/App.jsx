@@ -1,12 +1,13 @@
-import React from "react";
 import { Heading, Link, Text } from "@atomic-ui/elements";
-
+import { Section } from "@atomic-ui/structure";
+import React from "react";
 import "./App.css";
+import linearScreenshot from "./images/linear-screenshot.webp";
 
 function App() {
   return (
     <main>
-      <header>
+      <header className="page-header">
         <nav>
           <Link href="/">Logo</Link>
           <Link href="/">Features</Link>
@@ -19,22 +20,23 @@ function App() {
           <Link href="/">Sign up</Link>
         </nav>
       </header>
-      <section data-section="hero">
+      <Section data-section="hero">
         <Heading as="h1">
-          The new standard for modern software development
+          The issue tracking tool you&apos;ll enjoy using
         </Heading>
         <Text>
-          With its meticulous design, breathtaking speed and opinionated yet
-          flexible workflows, Linear unlocks your teams full potential. It is
-          the tool of choice for high-performance teams to build products
-          better.
+          Linear helps streamline software projects, sprints, tasks, and bug
+          tracking. It&apos;s built for high-performance teams.
         </Text>
         <Link href="/" as="button">
           Sign up for free
         </Link>
-      </section>
-      <section data-section="customers"></section>
-      <section data-section="features"></section>
+      </Section>
+      <Section data-section="demo">
+        <img src={linearScreenshot} alt="Screen shot of linear app" />
+      </Section>
+      <Section data-section="customers"></Section>
+      <Section data-section="features"></Section>
     </main>
   );
 }
