@@ -22,5 +22,6 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/no-redundant-roles": "off",
+    "react/react-in-jsx-scope": "",
   },
 };
