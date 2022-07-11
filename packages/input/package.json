@@ -1,7 +1,0 @@
-{
-  "name": "@atomic-ui/input",
-  "version": "0.0.1",
-  "description": "Form input field",
-  "main": "index.js",
-  "license": "MIT"
-}

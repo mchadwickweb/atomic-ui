@@ -1,0 +1,10 @@
+{
+  "name": "@atomic-ui/components",
+  "private": true,
+  "description": "Atomic UI - Components",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
