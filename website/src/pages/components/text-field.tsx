@@ -1,18 +1,21 @@
-import { TextField } from "@atomic-ui/components";
+import { Divider, Heading, Text, TextField } from "@atomic-ui/core";
 
 export default function TextFieldPage() {
   return (
     <>
-      <h1>Text Field</h1>
-      <h2>Examples</h2>
-      <p>
-        <strong>Simple text field with label</strong>
-      </p>
-      <TextField id="example" name="example" labelText="Example" type="text" />
+      <Heading as="h1">Text Field</Heading>
+      <Divider />
+      <Heading as="h2">Examples</Heading>
 
-      <p>
+      <Text>
+        <strong>Simple text field with label</strong>
+      </Text>
+      <TextField id="example" name="example" labelText="Example" type="text" />
+      <Divider />
+
+      <Text>
         <strong>Simple text field with hint</strong>
-      </p>
+      </Text>
       <TextField
         id="example"
         name="example"
@@ -20,10 +23,11 @@ export default function TextFieldPage() {
         type="text"
         hint="This is a hint"
       />
+      <Divider />
 
-      <p>
+      <Text>
         <strong>Simple text field with error</strong>
-      </p>
+      </Text>
       <TextField
         id="example"
         name="example"
@@ -42,10 +46,11 @@ export default function TextFieldPage() {
         />
       `}
       </pre>
+      <Divider />
 
-      <p>
+      <Text>
         <strong>Simple text field with hint and error</strong>
-      </p>
+      </Text>
       <TextField
         id="example"
         name="example"

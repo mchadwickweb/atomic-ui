@@ -1,4 +1,4 @@
-const withTM = require("next-transpile-modules")(["@atomic-ui/components"]);
+const withTM = require("next-transpile-modules")(["@atomic-ui/core"]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
