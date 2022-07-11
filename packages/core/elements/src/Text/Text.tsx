@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Text.css";
 
 export interface TextProps {

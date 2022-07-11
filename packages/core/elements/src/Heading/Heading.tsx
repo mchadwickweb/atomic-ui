@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Heading.css";
 
 export interface HeadingProps {

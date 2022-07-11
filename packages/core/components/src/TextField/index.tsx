@@ -1,4 +1,4 @@
-import React, { AllHTMLAttributes } from "react";
+import { AllHTMLAttributes } from "react";
 
 type InputElementProps = AllHTMLAttributes<HTMLInputElement>;
 
