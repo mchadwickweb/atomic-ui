@@ -31,6 +31,17 @@ export default function TextFieldPage() {
         type="text"
         errorMessage="Uh oh!"
       />
+      <pre>
+        {`
+        <TextField
+          id="example"
+          name="example"
+          labelText="Example"
+          type="text"
+          errorMessage="Uh oh!"
+        />
+      `}
+      </pre>
 
       <p>
         <strong>Simple text field with hint and error</strong>
@@ -43,6 +54,9 @@ export default function TextFieldPage() {
         hint="This is a hint"
         errorMessage="Uh oh!"
       />
+      <pre>
+        {`<TextField id="example" name="example" labelText="Example" type="text" hint="This is a hint" errorMessage="Uh oh!" />`}
+      </pre>
     </>
   );
 }
