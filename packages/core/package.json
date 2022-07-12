@@ -1,6 +1,5 @@
 {
   "name": "@atomic-ui/core",
-  "private": true,
   "description": "Atomic UI - Core",
   "version": "0.0.1",
   "scripts": {
