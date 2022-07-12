@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../elements/src/Heading/Heading.css", "../elements/src/Text/Text.css", "../structure/src/Section/Section.css"],
+  "sourcesContent": ["[data-heading-align=\"left\"] {\n  text-align: left;\n}\n\n[data-heading-align=\"center\"] {\n  text-align: center;\n}\n\n[data-heading-align=\"right\"] {\n  text-align: right;\n}\n", "[data-text-align=\"left\"] {\n  text-align: left;\n}\n\n[data-text-align=\"center\"] {\n  text-align: center;\n}\n\n[data-text-align=\"right\"] {\n  text-align: right;\n}\n", "[data-contain=\"true\"] {\n  max-width: var(--container-width);\n  margin: 0 auto;\n  padding-left: var(--container-padding);\n  padding-right: var(--container-padding);\n}\n"],
+  "mappings": "AAAA,0BACE,gBAGF,4BACE,kBAGF,2BACE,iBCTF,uBACE,gBAGF,yBACE,kBAGF,wBACE,iBCTF,oBACE,iCADF,cAGE,sCACA",
+  "names": []
+}

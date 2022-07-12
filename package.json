@@ -12,11 +12,8 @@
     "website"
   ],
   "scripts": {
-    "start": "cd website && yarn dev",
-    "clean": "rimraf dist",
-    "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "build:core": "node ./esbuild.js",
-    "build": "npm-run-all clean build:types build:core"
+    "start": "yarn --cwd website dev",
+    "build": "yarn --cwd packages/core build"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
